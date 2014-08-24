@@ -6,6 +6,6 @@ RUN \
   wget -O- http://neuro.debian.net/lists/trusty.us-ca.full | tee /etc/apt/sources.list.d/neurodebian.sources.list && \
   apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 2649A5A9 && \
   apt-get update && \
-  apt-get install fsl && \
+  apt-get -y install fsl && \
   echo "source /etc/fsl/5.0/fsl.sh" >> ~/.bashrc
   
