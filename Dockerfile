@@ -8,4 +8,5 @@ RUN \
   apt-get update && \
   apt-get -y install fsl && \
   echo "source /etc/fsl/5.0/fsl.sh" >> ~/.bashrc
-  
+
+CMD celery -A niquery.app.celery worker
